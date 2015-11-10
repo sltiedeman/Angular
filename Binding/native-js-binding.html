@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+Name: <input id="textInput" type="text">
+Hello <span id="nameDiv"></span>
+
+
+<script type="text/javascript">
+
+	var textInputElement = document.getElementById('textInput');
+	var nameDivElement = document.getElementById('nameDiv');
+	textInputElement.addEventListener('keyup', function(){
+		var text = textInputElement.value;
+		nameDivElement.innerHTML = text;
+	})
+
+</script>
+
+
+</body>
+</html>
